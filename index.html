@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <link rel="icon" type="image/png" href="https://example.com/favicon.png"/>  
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="yourlibrary.html">
+    <!-- this script is just for font awesome fonts -->
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+    <title>Relaxify</title>
+</head>
+<body>
+    <!-- Header Section of the main page -->
+    <header id="header">
+        <!-- This Nav Bar contains the logo, search bar and a dropdown button for sign-in-->
+        <nav id="nav">
+            <!-- this div is for logo of the site -->
+            <div id="sitename">
+                <img id="logo" src="/Media/icons/Crazy Muzic1.png" width="45vw" height="45vh"><span id="sn">Relaxify</span>
+            </div>
+            <!-- search bar -->
+            <form>
+                <input type="text" name="search" placeholder="Search..">
+            </form>
+            <!-- dropdown button -->
+            <div class="dropdown">
+                <button class="dropbtn">Sign in</button>
+                <div id="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Log In</a>
+                <a href="#">Settings</a>
+                </div>
+            </div>
+
+        </nav>
+        <!-- nav bar ends -->
+    </header>
+    <!-- header sectioni ends -->
+
+    <!-- aside section starts which is side navbar -->
+    <aside id="aside">
+        <!-- Now we have different pages home(main page),library,create playlist ,liked song and playlists which are more oftenly by the user -->
+        <!-- home section -->
+        <section id="home">
+            <!-- icon for home section -->
+            <img id="hicon"src="" width="25vw" height="30vh">
+            <!-- link to main page -->
+            <a href="index.html">Home</a>
+        </section>
+        <!-- library section which contains all the playlists played or created by user -->
+        <section id ="library">
+            <!-- icon for library page -->
+            <img id="libraryicon" src="/Media/icons/libraryicon.png" width="25vw" height="30vh">
+            <!-- link to library page -->
+            <a href="yourlibrary.html">Your Library</a>
+        </section>
+
+        <section id="create">
+            <!-- create playlist icon -->
+            <img id="createicon" src="/Media/icons/createplaylisticon.png" width="25vw" height="30vh">
+            <a href="#">Create Playlist</a>
+        </section>
+
+        <section id="likedsongs">
+            <!-- liked songs icon -->
+            <img id="liked" src="/Media/icons/likedicon.png" width="25vw" height="30vh">
+            <!-- link to single playlist screen -->
+            <a href="playlist.html">Liked Songs<a>
+        </section>
+
+        <section id="playlists-name">
+            <!-- links to single playlist screen -->
+            <a id="p1" href="playlist.html">My Playlist #1</a>
+            <a id="p2" href="playlist.html">My Playlist #2</a>
+            <a id="p3" href="playlist.html">My Playlist #3</a>
+        </section>
+
+    </aside>
+    <!-- side navbar(aside section) ends -->
+    <!-- main section of the main page starts -->
+    <main id="main">
+        <!-- slider section starts which is made by using a little bit of javascript which looks a little bit attractive -->
+        <section id="sliding"> 
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                <!-- link to single playlist screen -->
+                  <a href="playlist.html"><img src="/Media/Posters//slider/1.jpg" style="width:90% ;height:70vh"></a>
+                 
+                </div>
+                
+                <div class="mySlides fade">
+                  <!-- link to single playlist screen -->
+                  <a href="playlist.html"><img src="/Media/Posters/slider/2.jpg" style="width:90%;height:70vh"></a>
+                  
+                </div>
+                
+                <div class="mySlides fade">
+                 <!-- link to single playlist screen -->
+                  <a href="playlist.html"><img src="/Media/Posters//slider/3.jpg" style="width:90%;height:70vh"></a>
+                
+                </div>
+
+                <div class="mySlides fade">
+                    <!-- link to single playlist screen -->
+                    <a href="playlist.html"><img src="/Media/Posters/slider/5.jpg" style="width:90%;height:70vh"></a>
+                  
+                  </div>
+        
+                </div>
+                <br>
+                <!-- these indicates the number of slide on which slider is -->
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span> 
+                </div>
+            
+        </section>
+        <!-- slider section ends -->
+
+        <!-- trending today section starts -->
+        <h1>Trending Today</h1>
+        <section id="trending-today">
+            <!-- following divs contains each element of this section -->
+            <div class="trending-songs">
+                <!-- image of the song -->
+                <img id="song-image" src="/Media/Posters/trending today/9.jpg" width="100px" height="90px">
+                <!-- song's name -->
+                <p class="songname">Mann Bhariya 2</p>
+                <!-- singer's name -->
+                <p class="singername">B Praak</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/trending today/10.jpg" width="100px" height="90px">
+                <p class="songname">Stay</p>
+                <p class="singername">Justin Bieber</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/trending today/11.jpg" width="100px" height="90px">
+                <p class="songname">Baarish</p>
+                <p class="singername">Payal Dev,Stebin Ben</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/trending today/12.jpg" width="100px" height="90px">
+                <p class="songname">Let me Love you</p>
+                <p class="singername">Dj Snake</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/trending today/3.jpg" width="100px" height="90px">
+                <p class="songname">Khairiyat</p>
+                <p class="singername">Arijit Singh</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/trending today/2.jpg" width="100px" height="90px">
+                <p class="songname">Libaas</p>
+                <p class="singername">Kaka</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/trending today/1.jpg" width="100px" height="90px">
+                <p class="songname">Tujhe Kitna Chahne Lage</p>
+                <p class="singername">Arijit Singh</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/trending today/4.jpg" width="100px" height="90px">
+                <p class="songname">Deva</p>
+                <p class="singername">Sachet Tondon</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/trending today/5.jpg" width="100px" height="90px">
+                <p class="songname">295</p>
+                <p class="singername">Sidhu Moosewala</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/trending today/6.jpg" width="100px" height="90px">
+                <p class="songname">Hawa Baanke</p>
+                <p class="singername">Darshan Rawal</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/trending today/7.jpg" width="100px" height="90px">
+                <p class="songname">Mazaa</p>
+                <p class="singername">B Praak</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/trending today/8.jpg" width="100px" height="90px">
+                <p class="songname">Ratan Lambiyan</p>
+                <p class="singername">Asees Kaur</p>
+            </div>
+        </section>
+        <!-- trending today section ends -->
+
+        <!-- top charts section starts -->
+        <section id="top-charts">
+            <!-- heading of the section -->
+            <h1>Top Charts</h1>
+            <div id="topcharts">
+                <!-- below are the div for all the elements in this section -->
+                <div id="weekly">
+                        <!-- song's image -->
+                        <img id="song-image" src="/Media/Posters/top charts/2.jpg" width="188rem" 250rem>
+                        <!-- album's name -->
+                        <p id="mainchart">Weekly Top 20</p>
+                        <!-- description text for the album -->
+                        <p class="desc">The top moves this week</p>
+                </div>
+                <div class="albums">
+                    <div class="top-charts">
+                        <!-- song's image -->
+                        <img id="song-image" src="/Media/Posters/top charts/4.jpg" width="150rem" height="120rem">
+                        <!-- album's name -->
+                        <p class="album-name"> Bollywood Mush</p>
+                        <!-- description of the album -->
+                        <p class="desc">Relaxify</p>
+                    </div>  
+                    <div class="top-charts">
+                        <img id="song-image" src="/Media/Posters/top charts/3.jpg" width="150rem" height="120rem">
+                        <p class="album-name"> Hollywood hit songs</p>
+                        <p class="desc">Relaxify</p>
+                    </div>  
+                    <div class="top-charts">
+                        <img id="song-image" src="/Media/Posters/top charts/5.jpg" width="150rem" height="120rem">
+                        <p class="album-name"> Punjabi 101</p>
+                        <p class="desc">Relaxify</p>
+                    </div>
+                    <div class="top-charts">
+                        <img id="song-image" src="/Media/Posters/top charts/1.jpg" width="150rem" height="120rem">
+                        <p class="album-name"> English Chartbursters</p>
+                        <p class="desc">Relaxify</p>
+                    </div>
+                    <div class="top-charts">
+                        <img id="song-image" src="/Media/Posters/top charts/6.jpg" width="150rem" height="120rem">
+                        <p class="album-name"> Romance top 40</p>
+                        <p class="desc">Relaxify</p>
+                    </div>
+                    <div class="top-charts">
+                        <img id="song-image" src="/Media/Posters/top charts/7.jpg" width="150rem" height="120rem">
+                        <p class="album-name"> International hits</p>
+                        <p class="desc">Relaxify</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- top charts section ends here -->
+
+        <!-- latest songs sections start which contains latest hindi songs, latest english songs and punjabi songs -->
+        <h1>Latest Hindi Songs</h1>
+        <section id="latest-hindi">
+            <!-- now following divs containsthe elements -->
+            <div class="trending-songs">
+                <!-- song's image -->
+                <img id="song-image" src="/Media/Posters/latest hindi/1.jpg" width="100px" height="90px">
+                <!-- song's name -->
+                <p class="songname">Dil Kisi se</p>
+                <!-- singer's name -->
+                <p class="singername">Arjun Kanungo</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/latest hindi/2.jpg" width="100px" height="90px">
+                <p class="songname">Mujhe Pyaar Pyaar Hai</p>
+                <p class="singername">Armaan Malik</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/latest hindi/3.jpg" width="100px" height="90px">
+                <p class="songname">Kanta Laga</p>
+                <p class="singername">Yo Yo Honey Singh</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/latest hindi/4.jpg" width="100px" height="90px">
+                <p class="songname">Do Ghoont</p>
+                <p class="singername">Shruti Rane</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/latest hindi/5.jpg" width="100px" height="90px">
+                <p class="songname">Ishq Mein</p>
+                <p class="singername">Meet Bros</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/latest hindi/6.jpg" width="100px" height="90px">
+                <p class="songname">Vignaharta</p>
+                <p class="singername">Ajay Gogawale</p>
+            </div>
+        </section>
+        <!-- latest hindi songs section ends -->
+
+        <!-- latest punjabi songs section -->
+        <h1>Latest Punjabi Songs</h1>
+        <section id="latest-punjabi">
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/latest Punjabi/1.jpg" width="100px" height="90px">
+                <p class="songname">Soulmate</p>
+                <p class="singername">Akhil, Aastha Gill</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/latest Punjabi/2.jpg" width="100px" height="90px">
+                <p class="songname">Sukoon</p>
+                <p class="singername">Mannat Noor</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/latest Punjabi/3.jpg" width="100px" height="90px">
+                <p class="songname">Teri Akhiyaan</p>
+                <p class="singername">Ammy Virk,B Praak</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/latest Punjabi/4.jpg" width="100px" height="90px">
+                <p class="songname">Raazi</p>
+                <p class="singername">Raman Romana</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/latest Punjabi/5.jpg" width="100px" height="90px">
+                <p class="songname">Gundeyaan Di Gaddi</p>
+                <p class="singername">R Nait</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/latest Punjabi/6.jpg" width="100px" height="90px">
+                <p class="songname">Hor Dus</p>
+                <p class="singername">Parmish Verma</p>
+            </div>
+        </section>
+        <!-- latest punjabi songs section ends  -->
+
+        <!-- latest english songs section begins -->
+        <h1>Latest English Songs</h1>
+        <section id="latest-english">
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/latest english/5.jpg" width="100px" height="90px">
+                <p class="songname">Jump Start</p>
+                <p class="singername">Allen Walker</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/latest english/2.jpg" width="100px" height="90px">
+                <p class="songname">Acapulco</p>
+                <p class="singername">Jason derulo</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/latest english/3.jpg" width="100px" height="90px">
+                <p class="songname">If I can't have Love</p>
+                <p class="singername">Halsey</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/latest english/4.jpg" width="100px" height="90px">
+                <p class="songname">Certified Lover Boy</p>
+                <p class="singername">Drake</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/latest english/5.jpg" width="100px" height="90px">
+                <p class="songname">Finish Lines</p>
+                <p class="singername">Allen Walker</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="song-image" src="/Media/Posters/latest english/1.jpg" width="100px" height="90px">
+                <p class="songname">Shivers</p>
+                <p class="singername">Ed Sheeran</p>
+            </div>
+        </section>
+        <!-- latest english songs section ends here -->
+
+        <!-- latest songs sections ends here -->
+
+        <!-- popular artists section begins here -->
+        <h1>Popular Artists</h1>
+        <section id="Popular-Artist">
+            <!-- following divs consists of all elements of this section -->
+
+            <div class="trending-songs">
+                <!-- artist's image -->
+                <img id="singer-image" src="/Media/Posters/popular artists/Arijit_Singh.jpg" width="130px" height="130px">
+                <!-- Artist's name -->
+                <p class="artist-name">Arijit Singh</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="singer-image" src="/Media/Posters/popular artists/Atif_Aslam.jpg" width="130px" height="130px">
+                <p class="artist-name">Atif Aslam</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="singer-image" src="/Media/Posters/popular artists/billie eilish.jpg" width="130px" height="130px">
+                <p class="artist-name">Billie Eilish</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="singer-image" src="/Media/Posters/popular artists/drake.jpg" width="130px" height="130px">
+                <p class="artist-name">Drake</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="singer-image" src="/Media/Posters/popular artists/ed sheeran.jpg" width="130px" height="130px">
+                <p class="artist-name">Ed Sheeran</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="singer-image" src="/Media/Posters/popular artists/Karan_Aujla.jpg" width="130px" height="130px">
+                <p class="artist-name">Karan Aujla</p>
+            </div>
+            <div class="trending-songs">
+                <img id="singer-image" src="/Media/Posters/popular artists/Neha_Kakkar.jpg" width="130px" height="130px">
+                <p class="artist-name">Neha Kakkar</p>
+            </div>
+
+            <div class="trending-songs">
+                <img id="singer-image" src="/Media/Posters/popular artists/Sidhu_Moose_Wala.jpg" width="130px" height="130px">
+                <p class="artist-name">Sidhu Moose Wala</p>
+            </div>
+
+        </section>
+        <!-- artist's section ends -->
+    </main>
+    <!-- main section ends -->
+
+    <!-- now aside ques section starts -->
+    <!-- This part will be visible on the page afte clicking this part full queue list will be visible -->
+    <div id="queuebutton" style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <span id="queue">Queue</span>
+        <!-- images of some songs which are present in the queue -->
+        <img id="queueimage" src="/Media/Posters/trending today/9.jpg" width="40px" height="43px">
+        <img id="queueimage" src="/Media/Posters/trending today/10.jpg" width="40px" height="43px">
+        <img id="queueimage" src="/Media/Posters/trending today/11.jpg" width="40px" height="43px">
+        <img id="queueimage" src="/Media/Posters/trending today/12.jpg" width="40px" height="43px">
+    </div>
+    <!-- visible part of queue section ends -->
+
+    <!-- now the following div will be visible after clicking on the visible part of queue -->
+    <!-- I made this using javascript basics  -->
+    <div id="myqueuenav" class="queuenav">
+        <!-- I have used a little bit of javascript basics just to do this more efficiently -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;<span id="queue">Queue</span></a>
+        <!-- now the queue list starts -->
+        <ol>
+            <!-- Now following are the particular element of ordered queue list -->
+            <li>
+                <!-- image of song -->
+                <img id="song-image" src="/Media/Posters/trending today/9.jpg" width="40px" height="43px">
+                <!-- song name -->
+                <span class="songname">Mann Bhariya 2</span>
+                <!-- singer's name -->
+                <span class="singername">B Praak</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/10.jpg" width="40px" height="43px">
+                <span class="songname">Stay</span>
+                <span class="singername">Justin Bieber</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/11.jpg" width="40px" height="43px">
+                <span class="songname">Baarish</span>
+                <span class="singername">Payal Dev</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/12.jpg" width="40px" height="43px">
+                <span class="songname">Let me Love you</span>
+                <span class="singername">Dj Snake</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/3.jpg" width="40px" height="43px">
+                <span class="songname">Khairiyat</span>
+                <span class="singername">Arijit Singh</span>
+            </li>
+
+            <li >
+                <img id="song-image" src="/Media/Posters/trending today/2.jpg" width="40px" height="43px">
+                <span class="songname">Libaas</span>
+                <span class="singername">Kaka</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/1.jpg" width="40px" height="43px">
+                <span class="songname">Tujhe Kitna Chahne Lage</span>
+                <span class="singername">Arijit Singh</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/4.jpg" width="40px" height="43px">
+                <span class="songname">Deva</span>
+                <span class="singername">Sachet Tondon</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/5.jpg" width="40px" height="43px">
+                <span class="songname">295</span>
+                <span class="singername">Sidhu Moosewala</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/6.jpg" width="40px" height="43px">
+                <span class="songname">Hawa Baanke</span>
+                <span class="singername">Darshan Rawal</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/7.jpg" width="40px" height="43px">
+                <span class="songname">Mazaa</span>
+                <span class="singername">B Praak</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/8.jpg" width="40px" height="43px">
+                <span class="songname">Ratan Lambiyan</span>
+                <span class="singername">Asees Kaur</span>
+            </li>
+        </ol>
+        <!-- end of queue list -->
+    </div>
+    <!-- End of aside queue section -->
+
+    <!-- footer section starts which contains music player -->
+    <footer>
+        <div class="active-song-description">
+            <!-- song image -->
+            <div id="songimage">
+                <img src="Media/Posters/trending today/9.jpg" width="30px" height="30px">
+            </div>
+            <!-- song name and author -->
+            <div class="songdesc">
+                <div>
+                    Mann Bhariya 2.0
+                </div>
+                <div>
+                    B Praak
+                </div>
+                <!-- heart icon and ban icon -->
+            </div>
+            <div class="heart-and-ban-icon">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+        <!-- these are the main player controls -->
+        <div class="player">
+            <div class="controls">
+                <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div><i class="fas fa-pause-circle"></i></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>
+            </div>
+            <!-- this is the slider -->
+            <div id="slider">
+                <!-- current time -->
+                <div class="time">
+                    1:39
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                </div>
+                <!-- total time -->
+                <div class="time">
+                    4:44
+                </div>
+            </div>
+        </div>
+        <!-- other icons including the volume slider and all -->
+        <div class="extras">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="slidecontainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+    </footer>
+   <!-- this script is used only for slider animation on the home page and for queue aside section -->
+    <script src="script.js"></script>
+</body>
+</html>

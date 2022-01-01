@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <link rel="icon" type="image/png" href="https://example.com/favicon.png"/>  
+    <link rel="stylesheet" href="styles.css">
+    <title>Albums</title>
+</head>
+<body>
+    <!-- Header Section of the main page -->
+    <header id="header">
+        <!-- This Nav Bar contains the logo, search bar and a dropdown button for sign-in-->
+        <nav id="nav">
+            <!-- this div is for logo of the site -->
+            <div id="sitename">
+                <img id="logo" src="/Media/icons/Crazy Muzic1.png" width="45vw" height="45vh"><span id="sn">Relaxify</span>
+            </div>
+            <!-- search bar -->
+            <form>
+                <input type="text" name="search" placeholder="Search..">
+            </form>
+            <!-- dropdown button -->
+            <div class="dropdown">
+                <button class="dropbtn">Sign in</button>
+                <div id="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Log In</a>
+                <a href="#">Settings</a>
+                </div>
+            </div>
+
+        </nav>
+        <!-- nav bar ends -->
+    </header>
+    <!-- header sectioni ends -->
+
+    <!-- aside section starts which is side navbar -->
+    <aside id="aside">
+        <!-- Now we have different pages home(main page),library,create playlist ,liked song and playlists which are more oftenly by the user -->
+        <!-- home section -->
+        <section id="home">
+            <!-- icon for home section -->
+            <img id="hicon"src="/Media/icons/homeicon.png" width="25vw" height="30vh">
+            <!-- link to main page -->
+            <a href="index.html">Home</a>
+        </section>
+        <!-- library section which contains all the playlists played or created by user -->
+        <section id ="library">
+            <!-- icon for library page -->
+            <img id="libraryicon" src="/Media/icons/libraryicon.png" width="25vw" height="30vh">
+            <!-- link to library page -->
+            <a href="yourlibrary.html">Your Library</a>
+        </section>
+
+        <section id="create">
+            <!-- create playlist icon -->
+            <img id="createicon" src="/Media/icons/createplaylisticon.png" width="25vw" height="30vh">
+            <a href="#">Create Playlist</a>
+        </section>
+
+        <section id="likedsongs">
+            <!-- liked songs icon -->
+            <img id="liked" src="/Media/icons/likedicon.png" width="25vw" height="30vh">
+            <!-- link to single playlist screen -->
+            <a href="playlist.html">Liked Songs<a>
+        </section>
+
+        <section id="playlists-name">
+            <!-- links to single playlist screen -->
+            <a id="p1" href="playlist.html">My Playlist #1</a>
+            <a id="p2" href="playlist.html">My Playlist #2</a>
+            <a id="p3" href="playlist.html">My Playlist #3</a>
+        </section>
+
+    </aside>
+    <!-- side navbar(aside section) ends -->
+    
+    <main id="main">
+        <!-- nav bar of library page -->
+        <nav id="album-nav">
+            <!-- links to the home page of library which consists playlists ;artists page adn albums page -->
+            <a href="yourlibrary.html">Playlists</a>
+        
+            <a href="artists.html">Artists</a>
+        
+            <a href="album.html">Albums</a>
+
+
+        </nav>
+        <!-- navbar ends here -->
+
+        <!-- albums liked by the user section -->
+        <section id="artisticon" >
+            <div>
+                <!-- album's icon -->
+                <img  src="/Media/icons/artisticon.png" width="68px" height="68px">
+            </div>
+            <!-- description -->
+            <p id="highlight">Follow your first album</p>
+            <p id="desc-text">Follow albums you like by tapping the following button</p>
+            <button type="button" class="find-button"><a href="index.html#top-charts">FIND ALBUMS</a></button>
+        </section>
+        <!-- albums section ends -->
+    </main>
+    <!-- main section ends here -->
+
+    <!-- now aside ques section starts -->
+    <!-- This part will be visible on the page afte clicking this part full queue list will be visible -->
+    <div id="queuebutton" style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <span id="queue">Queue</span>
+        <!-- images of some songs which are present in the queue -->
+        <img id="queueimage" src="/Media/Posters/trending today/9.jpg" width="40px" height="43px">
+        <img id="queueimage" src="/Media/Posters/trending today/10.jpg" width="40px" height="43px">
+        <img id="queueimage" src="/Media/Posters/trending today/11.jpg" width="40px" height="43px">
+        <img id="queueimage" src="/Media/Posters/trending today/12.jpg" width="40px" height="43px">
+    </div>
+    <!-- visible part of queue section ends -->
+    
+    <!-- now the following div will be visible after clicking on the visible part of queue -->
+    <!-- I made this using javascript basics  -->
+    <div id="myqueuenav" class="queuenav">
+        <!-- I have used a little bit of javascript basics just to do this more efficiently -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;<span id="queue">Queue</span></a>
+        <!-- now the queue list starts -->
+        <ol>
+            <!-- Now following are the particular element of ordered queue list -->
+            <li>
+                <!-- image of song -->
+                <img id="song-image" src="/Media/Posters/trending today/9.jpg" width="40px" height="43px">
+                <!-- song name -->
+                <span class="songname">Mann Bhariya 2</span>
+                <!-- singer's name -->
+                <span class="singername">B Praak</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/10.jpg" width="40px" height="43px">
+                <span class="songname">Stay</span>
+                <span class="singername">Justin Bieber</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/11.jpg" width="40px" height="43px">
+                <span class="songname">Baarish</span>
+                <span class="singername">Payal Dev</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/12.jpg" width="40px" height="43px">
+                <span class="songname">Let me Love you</span>
+                <span class="singername">Dj Snake</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/3.jpg" width="40px" height="43px">
+                <span class="songname">Khairiyat</span>
+                <span class="singername">Arijit Singh</span>
+            </li>
+
+            <li >
+                <img id="song-image" src="/Media/Posters/trending today/2.jpg" width="40px" height="43px">
+                <span class="songname">Libaas</span>
+                <span class="singername">Kaka</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/1.jpg" width="40px" height="43px">
+                <span class="songname">Tujhe Kitna Chahne Lage</span>
+                <span class="singername">Arijit Singh</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/4.jpg" width="40px" height="43px">
+                <span class="songname">Deva</span>
+                <span class="singername">Sachet Tondon</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/5.jpg" width="40px" height="43px">
+                <span class="songname">295</span>
+                <span class="singername">Sidhu Moosewala</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/6.jpg" width="40px" height="43px">
+                <span class="songname">Hawa Baanke</span>
+                <span class="singername">Darshan Rawal</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/7.jpg" width="40px" height="43px">
+                <span class="songname">Mazaa</span>
+                <span class="singername">B Praak</span>
+            </li>
+
+            <li>
+                <img id="song-image" src="/Media/Posters/trending today/8.jpg" width="40px" height="43px">
+                <span class="songname">Ratan Lambiyan</span>
+                <span class="singername">Asees Kaur</span>
+            </li>
+        </ol>
+        <!-- end of queue list -->
+    </div>
+    <!-- End of aside queue section -->
+
+    <footer>
+        <div class="active-song-description">
+            <!-- song image -->
+            <div id="songimage">
+                <img src="Media/Posters/trending today/9.jpg" width="30px" height="30px">
+            </div>
+            <!-- song name and author -->
+            <div class="songdesc">
+                <div>
+                    Mann Bhariya 2.0
+                </div>
+                <div>
+                    B Praak
+                </div>
+                <!-- heart icon and ban icon -->
+            </div>
+            <div class="heart-and-ban-icon">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+        <!-- these are the main player controls -->
+        <div class="player">
+            <div class="controls">
+                <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div><i class="fas fa-pause-circle"></i></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>
+            </div>
+            <!-- this is the slider -->
+            <div id="slider">
+                <!-- current time -->
+                <div class="time">
+                    1:39
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                </div>
+                <!-- total time -->
+                <div class="time">
+                    4:44
+                </div>
+            </div>
+        </div>
+        <!-- other icons including the volume slider and all -->
+        <div class="extras">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="slidecontainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+    </footer>
+   <!-- this script is used only for slider animation on the home page and for queue aside section -->
+    <script src="script.js"></script>
+</body>
+</html>

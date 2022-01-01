@@ -1,0 +1,825 @@
+/* adding some css to the body */
+body{
+  margin: 0px;
+  background-image: url(/Media/bi.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* first of all the css for the common sections begins */
+/* css of all the headings  */
+h1{
+  font-size: 1.8rem;
+  margin-left: 1rem;
+}
+/* starting the css of index file */
+/* starting the css of header part of index file */
+
+/* first comes the navbar's css which contains 3 parts site's logo; search bar and sign-in button */
+#nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 15px 2px -15px rgb(126, 125, 125);
+    height: 10%;
+    width: 100%;
+   
+}
+/* site's logo css */
+#sitename{
+    display: flex;
+    align-items: center;
+}
+#logo{
+    border-radius: 5px 5px 5px 5px;
+    margin: 1rem 1rem 1rem 1.5rem;
+}
+
+#sn{
+    font-size: 2rem;
+    font-family:cursive;
+    color: #f10065;
+    font-weight: 700;
+}
+/* logo's css ends */
+
+/* css for search barr */
+input[type=text] {
+    
+    width: 50vh;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(/Media/icons/searchicon.png);
+    background-position: 1vh;
+    background-size: 4vh 4vh;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+    
+}
+  
+input[type=text]:focus {
+width: 100vh;
+text-decoration: none;
+}
+/* css of search bar ends  */
+
+/* css for sign-in button starts */
+/* this is the visible part of sign-in button */
+.dropbtn {
+    color: black;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+  }
+  
+  /* this part will be visible on hovering over the sign-in button  */
+.dropdown {
+position: relative;
+display: inline-block;
+background-color: rgb(240, 240, 240);
+background-image: url(/Media/icons/profileicon.png);
+background-position: 1vh;
+background-size: 3.3vh 3.3vh;
+background-repeat: no-repeat;
+padding: 12px 20px 12px 25px;
+}
+/* content of the sign-in button */
+#dropdown-content {
+display: none;
+position: absolute;
+background-color: white;
+min-width: 160px;
+color: black;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+/* sub div of content part of sign-in button */
+#dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+/* these are some hover effects forsign-in button */
+#dropdown-content a:hover {background-color: white}
+
+.dropdown:hover #dropdown-content {display: block;}
+/*  header css is complete */
+
+
+/* now the css for aside section begins */
+#aside{
+top: 10vh;
+width: 22%;
+height: 100%;
+position: fixed;
+float: left;
+
+}
+/* first section of aside section */
+#home{
+    margin: 2rem 0rem 1rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+}
+#home>a{
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+/* home section css ends */
+/* library section css begins */
+#library{
+    margin: 0.5rem 0rem 1rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+}
+#library>a{
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+/* create playlist section css begins */
+#create{
+    margin: 2.5rem 0rem 1rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+}
+#create>a{
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+/* some playlists option in aside section css */
+#likedsongs{
+    margin: 1rem 0rem 1.5rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+}
+#likedsongs>a{
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+#playlists-name{
+    box-shadow: 0px -15px 2px -15px rgb(126, 125, 125);
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#p1{
+  margin: 2.5rem 0rem 0.5rem 1.25rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 550;
+}
+#p2{
+  margin: 1rem 0rem 0.5rem 1.25rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 550;
+}
+#p3{
+  margin: 1rem 0rem 0.5rem 1.25rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 550;
+}
+#p4{
+  margin: 1rem 0rem 1.5rem 1.25rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 550;
+}
+/* aside section css ends */
+
+/* aside que section css begins here */
+
+/* some basic css for the queue heading */
+#queue{
+  margin: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+/* this is the css for visible part of que */
+#queuebutton{
+  border-radius: 6px;
+  box-shadow:0px 0px 6px 4px rgb(194, 194, 194) ;
+  position: fixed;
+  right: 0;
+  top: 27%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* css for images of songs in queue */
+#queueimage{
+  border-radius: 5px;
+  margin: 8px;
+}
+/* css for all the songs in queue */
+.queuenav {
+height: 17.375rem;
+box-shadow:0px 0px 6px 4px rgb(199, 198, 198) ;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 27%;
+border-radius: 10px;
+right: 0;
+background-color: rgb(255, 255, 255);
+overflow-x: hidden;
+transition: 0.5s;
+
+}
+
+.queuenav a {
+margin-left: 10px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+/* some hover  effects */
+.queuenav a:hover {
+color: black;
+}
+/* close button of queue css */
+.quequenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+}
+/* queue song's name css  */
+.queuesongname{
+  margin: 1rem 1rem 1rem 1rem;
+}
+/* responsivity of queue */
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+
+  /* Footer section starts here*/
+/* this is the container for the whole footer */
+footer {
+	position: fixed;
+	bottom: 1px;
+	width: 100%;
+	height: 60px;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: nowrap;
+	padding: 0px 3%;
+	box-sizing: border-box;
+
+}
+/* footer is divided into 3 parts */
+/* 1. first part of the footer */
+.active-song-description {
+	/* border:1px solid white; */
+	height: 90%;
+	width: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+/* the current song which is being played, this is the image container for that. */
+#songimage {
+	width: 50px;
+	height: 50px;
+	min-width: 50px;
+	min-height: 50px;
+}
+/* current song image */
+#songimage img {
+	width: 100%;
+	height: 100%;
+}
+/* heart and ban icon */
+.heart-and-ban-icon {
+	height: 100%;
+	padding-top: 4%;
+}
+/* song decscription */
+.songdesc {
+	margin-right: 1%;
+	margin-left: 1%;
+}
+/* song name */
+.songdesc div:nth-child(1) {
+	font-size: 14px;
+}
+/* song author */
+.songdesc div:nth-child(2) {
+	font-size: 12px;
+}
+
+/* 2. Second part of the footer*/
+.player {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+/* controls is the container for all the center controls of the player */
+.controls {
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+}
+/* this is the song-duration slider */
+#slider {
+	width: 100%;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5px;
+}
+/* ////////// */
+.time {
+	margin: 0px 10px;
+}
+
+/* adjusting the slider for better visuals */
+.slidecontainer {
+	width: 100%;
+}
+/* for audio and main center player */
+.slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.5;
+	-webkit-transition: 0.2s;
+	transition: opacity 0.2s;
+}
+/* hover effect for the slider */
+.slider:hover {
+	opacity: 1;
+}
+/* these are for adjusting the dimensions and default styling of the long-slider */
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	background: #007bff;
+	cursor: pointer;
+}
+/* this is the circular thumb, which can be moved across the div */
+.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	background: #4caf50;
+	cursor: pointer;
+}
+
+/* third part of the footer */
+/* this contains the extra icons and slider for volume */
+/* this is also a container */
+.extras {
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+/* footer section css ends */
+/* css common for all the section is done */
+
+#main{
+    padding-top: 9.2%;
+    padding-left: 25%;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 12px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* css begins for trending-today section of main page */
+#trending-today{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/* these are the main divs in which the song's image, singer's name and song description is written */
+.trending-songs{
+  margin: 1rem;
+  display: inline-block;
+}
+/* some hover effects for the trending-songs div */
+.trending-songs:hover{
+  box-shadow: 0px 0px 6px 4px rgb(145, 140, 140);
+  border-radius: 6px ;
+}
+/* css for song's image */
+#song-image{
+  border-radius: 6px 6px 6px 6px;
+  margin: 5px;
+} 
+/* song's name css */
+.songname{
+  font-size: 0.9rem;
+  margin-left: 5px;
+  text-align: center;
+  max-width: 100px;
+}
+/* singer's name */
+.singername{
+  font-size: 0.7rem;
+  color: rgb(173, 173, 173);
+  text-align: center;
+  margin-top: -0.45rem;
+}
+/* top charts section of main page css starts */
+#top-charts{
+  max-width: 90%;
+}
+#topcharts{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+/* 1st element of top chart section */
+#weekly{
+  width: 23%;
+  margin-right: 1rem;
+}
+/* this is th css for the div containing other elements of top chart section */
+.albums{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 8px 8px 10px 8px;
+  max-width: 80%;
+}
+/* css for remaining elements */
+#mainchart{
+  font-size: 1.5rem;
+  font-weight: 550;
+  text-align: center;
+}
+/* element's name */
+.album-name{
+  font-size: 14px;
+  font-weight: 550;
+  text-align: center;
+}
+/* description of the element */
+.desc{
+  color: rgb(173, 173, 173);
+  text-align: center;
+  margin-top: -5px;
+  margin-left: 15px;
+  max-width: 8rem;
+}
+/* some hovering effects on top charts section */
+.top-charts:hover{
+  box-shadow: 0px 0px 6px 4px rgb(145, 140, 140);
+  border-radius: 6px ;
+}
+#weekly:hover{
+  box-shadow: 0px 0px 6px 4px rgb(145, 140, 140);
+  border-radius: 6px ;
+}
+/* css for top charts ection ends */
+/*  Now css for latest songs section begins*/
+#latest-hindi{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#latest-punjabi{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#latest-english{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/* css for latest songs section ends here */
+/* popular artists section begins */
+#Popular-Artist{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 90%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#singer-image{
+  border-radius: 50%;
+  margin: 5px;
+}
+.artist-name{
+  font-size: 0.9rem;
+  margin-left: 17px;
+  text-align: center;
+  max-width: 100px;
+}
+/* popular artists section ends here*/
+/* main page css ends here */
+
+/* your library page css begins */
+/* your library page nav bar css */
+#album-nav{
+  position: fixed;
+  top: 13%;
+  height:3rem;
+  width: 70%;
+  vertical-align: middle;
+  /* padding-left: 27%; */
+}
+
+#album-nav>a{
+  text-decoration: none;
+  color: black;
+  margin: 4rem 1rem 1rem 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 550;
+  
+}
+/* your library navbar css ends here */
+/* your library page playlist section main content css begins here */
+#l-main{
+  padding-top: 10%;
+    padding-left: 27%;
+}
+/* 1st section in playlist page in your library */
+#playlists{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 90%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* 2nd sectoin css  */
+#similar-playlists{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 90%;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.pn{
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 550;
+  text-align: center;
+}
+/* playlist page of your library css ends here */
+/* album and artists page in your libray page css starts here */
+/* artists icon css */
+#artisticon{
+  height: 90vh;
+  margin-top: -7%;
+  margin-left: -10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* artists followed line css */
+#highlight{
+  font-size: 2rem;
+  margin-top: -0.5vh;
+  font-weight: 700;
+}
+/* description text css */
+#desc-text{
+  font-size: 1.2rem;
+  margin-top: -3vh;
+}
+/* find artists/albums button css starts here */
+.find-button{
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 550;
+  width: 10rem;
+  height: 2.8rem;
+  padding: 6px;
+  margin-top: 1.5%;
+}
+.find-button>a{
+  text-decoration: none;
+  color: #111;
+}
+/* some hovering effects on find button */
+.find-button:hover{
+  font-size: 16px;
+  width: 11rem;
+  height: 3.2rem;
+}
+/* your library page css ends here */
+
+/* single playlist page css begins here */
+
+/*single playlist page header */
+#playlist-header{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem;
+}
+/* some description of the playlist */
+#playlist-desc{
+  margin-top: 7%;
+  margin-left: 2.5rem;
+}
+/* playlist type like its a playlist or albumor artist's info page */
+#p-type{
+  font-size: 1rem;
+}
+/* css for name of playlist */
+#p-name{
+  font-size: 5rem;
+  margin-top: -5%;
+  font-weight: 550;
+  margin-bottom: 3vh;
+}
+/* more info about playlist like its name and time and number of songs present in it */
+#p-desc{
+  font-size: 1rem;
+  font-weight: 550;
+}
+/* image of the playlist css */
+#playlist-header>img{
+  margin-bottom: 1rem;
+}
+/* play button for the playlist */
+#play-button{
+  margin-top: 1rem;
+ margin-left: -1.5rem;
+}
+/* songs table css */
+#p-songs{width: 90%;}
+#p-songs tr:nth-child(even){background-color: #f2f2f2;}
+
+#p-songs td, #p-songs th {
+  padding: 8px;
+}
+/* some hovering effect */
+#p-songs tr:hover {background-color: #ddd;}
+
+#p-songs th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #91aca2;
+  color: rgb(0, 0, 0);
+}
+
+#pl-songs{
+  margin-bottom: 6rem;
+}
+/* button to add song in playlist  */
+.find-button1{
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 10px;
+  font-weight: 550;
+  width: 5rem;
+  height: 2rem;
+  padding: 2px;
+  margin-top: 1.5%;
+}
+.find-button1>a{
+  text-decoration: none;
+  color: #111;
+}
+.find-button1:hover{
+  font-size: 12px;
+  width: 5.5rem;
+  height: 2.3rem;
+}
+/* single playlist page css ends here */
+
+/* css for the whole site ends here */
