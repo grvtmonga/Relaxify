@@ -1,7 +1,7 @@
 /* adding some css to the body */
 body{
   margin: 0px;
-  background-image: url(/Media/bi.png);
+  background-image: url(./Media/bi.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
